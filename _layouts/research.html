@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<article class="container research-detail">
+  <header class="research-header">
+    <div class="research-icon-large">{{ page.icon | default: "🔬" }}</div>
+    <h1 class="research-title">{{ page.title }}</h1>
+    <p class="research-subtitle">{{ page.subtitle }}</p>
+    <div class="research-meta">
+      {% if page.status %}
+        <span class="badge badge-status">{{ page.status }}</span>
+      {% endif %}
+      {% if page.funding %}
+        <span class="badge badge-funding">Supported by: {{ page.funding }}</span>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="research-content content-block">
+    {{ content }}
+  </div>
+
+  {% if page.team and page.team.size > 0 %}
+    <div class="research-team content-block">
+      <h2>Team Members</h2>
+      <ul class="team-list-inline">
+        {% for member_name in page.team %}
+          <li>{{ member_name }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+</article>
