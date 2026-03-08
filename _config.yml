@@ -1,11 +1,11 @@
-name: "Victor Ongera"
-description: "Personal website for Victor Ongera: interactive CV, research portfolio, and tutorial updates."
+name: "Victor Nyabuti Ong'era"
+description: "Personal website for Victor Nyabuti Ong'era: interactive CV, research portfolio, and tutorial updates."
 url: "https://ongevic.github.io"
 baseurl: "/victor-ongera-hub"
 
 profile:
   name: "Victor Nyabuti Ong'era"
-  short_name: "Victor Ongera"
+  short_name: "Victor Nyabuti Ong'era"
   title: "PhD Researcher in Climate and Agriculture"
   location: "Pavia and Milan, Italy"
   tagline: "I work on climate-resilient farming systems using crop models, seasonal forecasts, and environmental data."
