@@ -1,14 +1,16 @@
 ---
-title: "Precision Agriculture"
-subtitle: "Using data to optimize crop yields and reduce waste"
-icon: 🚜
-status: Active
-funding: "USDA Grant #98765"
-team:
-  - Dr. Jane Smith
-  - Alex Johnson
+title: "Climate-resilient farming systems"
+subtitle: "Using crop simulation models and climate information to support agricultural adaptation."
+status: "PhD research"
+links:
+  - label: "Code repository"
+    url: "https://github.com/Ongevic"
+  - label: "LinkedIn profile"
+    url: "https://www.linkedin.com/in/victor-nyabuti-ongera-156394114/"
 ---
 
-Precision agriculture leverages data and technology to ensure that crops and soil receive exactly what they need for optimum health and productivity. The goal is to ensure profitability, sustainability and protection of the environment.
+My doctoral research focuses on how climate information and crop models can be combined to support more resilient farming systems.
 
-We are developing new machine learning models to analyze drone imagery and sensor data to predict crop yields and detect diseases early.
+The work draws on crop simulation models such as DSSAT, APSIM, and STICS, alongside seasonal climate forecasts and environmental datasets. The goal is to better understand agricultural sensitivity to weather and climate variability, and to explore adaptation pathways that are practical for decision-making.
+
+The broader emphasis is on translating technical modelling into information that can support climate-resilient agriculture.

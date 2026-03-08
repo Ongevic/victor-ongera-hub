@@ -1,77 +1,47 @@
 # Security Policy
 
-## Supported Versions
+## Supported Version
 
-The following versions of this project are currently supported with security updates:
+Security fixes are only maintained on the current `main` branch.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| `main`  | ✅ Yes             |
-| Older branches | ❌ No     |
-
-We recommend always using the latest version of this template.
-
----
+| Version | Supported |
+| ------- | --------- |
+| `main`  | Yes       |
+| older branches | No |
 
 ## Reporting a Vulnerability
 
-We take security seriously, even for open source website templates. If you discover a vulnerability — including issues related to dependency exposure, script injection, or unsafe configuration defaults — please report it responsibly.
+Do not open a public issue for a security problem.
 
-### How to Report
+If you find a vulnerability in this repository, use GitHub Private Vulnerability Reporting through the repository Security tab. If that is unavailable, contact the repository owner privately through GitHub.
 
-**Please do not open a public GitHub issue for security vulnerabilities.**
+Please include:
 
-Instead, report vulnerabilities privately via one of the following:
-
-- **GitHub Private Vulnerability Reporting** *(preferred)*: Use the [Security tab](../../security/advisories/new) on this repository to submit a private advisory.
-- **Email**: If GitHub's private reporting is unavailable, contact the maintainer directly at the email listed in the repository profile.
-
-### What to Include
-
-To help us triage and resolve the issue quickly, please include:
-
-- A clear description of the vulnerability
-- Steps to reproduce or a proof-of-concept (if applicable)
-- The potential impact or attack scenario
-- Any suggested mitigations (optional but appreciated)
-
----
-
-## Response Process
-
-After receiving your report, we will:
-
-1. **Acknowledge** your report within **48 hours**
-2. **Assess** the severity and scope of the issue
-3. **Develop and test** a fix, coordinating with you if needed
-4. **Release a patch** and credit you in the changelog (unless you prefer to remain anonymous)
-5. **Publish a security advisory** if the severity warrants it
-
----
+- a short description of the issue
+- steps to reproduce it
+- the possible impact
+- any suggested fix, if you have one
 
 ## Scope
 
-This is a **static website template**. The primary security considerations include:
+This repository is a static Jekyll website. Relevant security issues may include:
 
-- Third-party dependencies (npm packages, CDN scripts)
-- Configuration files that users may expose sensitive data through
-- Cross-site scripting (XSS) risks in any templating or rendering logic
-- Insecure defaults in deployment configurations
+- vulnerable Ruby or Jekyll dependencies
+- unsafe GitHub Pages or workflow configuration
+- accidental exposure of personal or sensitive information in site content
+- client-side issues such as script injection or unsafe third-party assets
 
-Issues related to a **user's own deployment** (e.g., their hosting environment or custom modifications) are outside the scope of this project's security responsibility.
+Custom deployments, forks, and downstream modifications are outside the scope of this policy.
 
----
+## Response
 
-## Disclosure Policy
+The maintainer will review reports as availability allows and will aim to:
 
-We follow a **coordinated disclosure** model. We ask that you give us reasonable time to address a confirmed vulnerability before any public disclosure. We aim to resolve critical issues within **14 days** and will communicate timelines transparently.
+1. acknowledge valid reports promptly
+2. assess severity and impact
+3. prepare and test a fix
+4. publish the fix through the `main` branch
 
----
+## Disclosure
 
-## Acknowledgements
-
-We appreciate the security research community and responsible reporters who help keep open source projects safe. Contributors who responsibly disclose valid vulnerabilities may be acknowledged in our release notes.
-
----
-
-*This security policy was last updated: March 2026.*
+Please allow reasonable time for investigation and remediation before public disclosure.

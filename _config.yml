@@ -1,161 +1,87 @@
-# ============================================
-# LAB WEBSITE CONFIGURATION
-# Edit this file to customize your lab website
-# ============================================
+name: "Victor Ongera"
+description: "Personal website for Victor Ongera: interactive CV, research portfolio, and tutorial updates."
+url: "https://ongevic.github.io"
+baseurl: "/victor-ongera-hub"
 
-# Site Settings
-name: "CARISMA Centre"
-description: "Climate change impact studies for risk management at IUSS Pavia."
-url: "https://iusspavia-carisma.github.io"
-baseurl: "/lab-website"
+profile:
+  name: "Victor Nyabuti Ong'era"
+  short_name: "Victor Ongera"
+  title: "PhD Researcher in Climate and Agriculture"
+  location: "Pavia and Milan, Italy"
+  tagline: "I work on climate-resilient farming systems using crop models, seasonal forecasts, and environmental data."
+  intro: "This site brings together my CV, selected research, and short updates on projects, tutorials, and practical methods."
+  bio:
+    - "I am a PhD researcher in Sustainable Development and Climate Change at IUSS Pavia, with a background in environmental change and environmental engineering."
+    - "My work focuses on crop simulation models, seasonal climate forecasts, and climate-risk analysis for agriculture, especially where better decisions can support more resilient farming systems."
+  links:
+    github: "https://github.com/Ongevic"
+    linkedin: "https://www.linkedin.com/in/victor-nyabuti-ongera-156394114/"
+    orcid: ""
+    cv_pdf: "/assets/docs/Victor-Ongera-CV.pdf"
+  interests:
+    - "Crop simulation models"
+    - "Seasonal climate forecasts"
+    - "Climate-resilient farming systems"
+    - "Remote sensing for agriculture"
+    - "Data analysis for environmental decision-making"
+  cv:
+    summary:
+      - "PhD researcher working on the links between climate, agriculture, and decision support, with experience across crop modelling, environmental analysis, and applied data work."
+      - "This online CV is designed to make it easy to review my academic background, research experience, and technical skills without relying only on a PDF."
+    highlights:
+      - "Applies DSSAT, APSIM, and STICS to climate-risk and agricultural systems questions"
+      - "Works with R, Python, Bash, and CDO tools for environmental data analysis"
+      - "Combines field observations, remote sensing, and modelling in climate-agriculture research"
+    experience:
+      - role: "Visiting Researcher"
+        organisation: "Department of Agroecology, Aarhus University"
+        period: "June 2025 - December 2025"
+        description: "Conducted field campaigns, integrated phenological and remote sensing datasets with crop models, and contributed to wheat growth and disease monitoring research."
+      - role: "Intern"
+        organisation: "CASSANDRA Lab, University of Milan"
+        period: "March 2023 - October 2023"
+        description: "Analyzed climate change impacts on wheat across countries, retrieved and processed historical and future climate data in R, and explored adaptation strategies through modelling and sensitivity analysis."
+      - role: "Data Analyst"
+        organisation: "Pallon"
+        period: "March 2020 - November 2022"
+        description: "Delivered data analysis, dashboards, and documentation to support business decision-making and improve data literacy for non-technical stakeholders."
+      - role: "Intern"
+        organisation: "General Directorate of Water Management (OVF)"
+        period: "July 2019 - December 2019"
+        description: "Supported suitability analysis, site preparation, and design interpretation for water-management related projects."
+    education:
+      - degree: "PhD in Sustainable Development and Climate Change"
+        institution: "Istituto Universitario di Studi Superiori, Pavia"
+        period: "2023 - 2026"
+      - degree: "MSc in Environmental Change and Global Sustainability Science"
+        institution: "University of Milan"
+        period: "2021 - 2023"
+      - degree: "BSc in Environmental Engineering"
+        institution: "University of Public Service, Budapest"
+        period: "2016 - 2021"
+    skills:
+      - "DSSAT"
+      - "APSIM"
+      - "STICS"
+      - "R"
+      - "Python"
+      - "Bash"
+      - "CDO tools"
+      - "AutoCAD"
+      - "EPANET"
+      - "Remote sensing"
 
-# Lab Information
-lab:
-  name: "CARISMA"
-  full_name: "Climate change impAct studies for RISk MAnagement"
-  tagline: "Research centre on climate change, impacts and risk management"
-  department: "Climate, Sustainability and Risk"
-  university: "Scuola Universitaria Superiore Pavia"
-  location: "Pavia, Italy"
-  founded: 2008
-  head: "Prof. Marco Gaetani"
-  overview:
-    intro:
-      - "The CARISMA Centre responds to the need for coordination of the numerous disciplinary profiles present in the IUSS that relate to the issues of climate change and sustainable development."
-      - "CARISMA is the IUSS reference centre for the National PhD on Sustainable Development and Climate Change."
-    objectives:
-      - "Data analysis and modelling of the processes of the Earth system and the economic system."
-      - "Assessment of the impact on the environment and humans of extreme natural events and human activities, with particular reference to climate change."
-      - "Assessment and management of impact-associated risk."
-      - "Formulation and proposal of new economic, political and legal models of sustainable development."
-    activities:
-      - "Evaluation of possible climate evolution and the effects of climate change and climate variability on the environment, on humans and social organizations, in support of sustainable development."
-      - "Integration of climate change in risk analysis and management through the use of data and climate modelling."
-      - "Development of integrated methodologies to support the overall analysis of the risk associated with complex phenomena of natural and technological origin, including multi-hazard risk assessment."
-      - "Improvement of Earth system modelling, including its interactions with social and socio-economic dynamics, to support integrated and cost-effective risk management and decision-making."
-  activity_sections:
-    - title: "Variability and climate change, extreme events"
-      paragraphs:
-        - "A core line of research of the centre is the study of climate through observations, satellite products and meteorological reanalysis datasets."
-        - "Recent and future anthropogenic climate change, and the related uncertainties, are studied using global and regional climate simulations, including high-resolution experiments from major international programmes."
-        - "Special attention is given to extremes such as intense precipitation and heat waves, with a focus on the Mediterranean region and developing countries."
-    - title: "Impact of climate on productive activities and human settlements"
-      paragraphs:
-        - "Research on climate variability and change is paired with impact analysis on the environment and on human activities."
-        - "The centre studies floods, droughts, agriculture, energy demand, renewable generation, thermal stress, and implications for buildings and infrastructures."
-        - "Statistical downscaling methods are applied to derive climate information at the resolution required for decision-making."
-    - title: "Interactions between environment, climate and socio-economic systems"
-      paragraphs:
-        - "This research area focuses on mitigation strategies and the management of risks linked to ongoing climate change."
-        - "Work covers value chains, greenhouse gas emissions, macroeconomic and financial risk, green transition policies, macro-prudential tools and transition risk in carbon-intensive sectors."
-        - "Analyses combine agent-based and stock-flow consistent macroeconomic models, network models, econometrics and machine learning."
-  projects:
-    - "RESILIENCE (CARIPARO)"
-    - "Dipartimento d'Eccellenza (MUR)"
-    - "Ecliptic (PRIN22)"
-    - "HOLISTIC (PNRA)"
-    - "Space It Up (ASI)"
-    - "NEWS (PRIN22 PNRR)"
-    - "ADAPTNOW (Interreg Alpine Space Program)"
-    - "CLIMATHUNDERR (ERIES)"
-    - "EXTRALOADINPORTS (ERIES)"
-    - "CoPe (PNRR)"
-    - "CU-BOLD (ERIES)"
-    - "LIDAR (ERIES)"
-    - "Atmospheric aerosol emissions and transport in southern Africa (Programma Galileo)"
-    - "ANTICIPATE (COST Action)"
-  people:
-    former_members:
-      - name: "Dr. Muhammad Nasir Imam"
-        orcid: ""
-      - name: "Dr. Marco Chericoni"
-        orcid: ""
-      - name: "Dott.ssa Laura T. Massano"
-        orcid: ""
-      - name: "Dott.ssa Modica Scala Angela"
-        orcid: ""
-      - name: "Dr. Naveen Ragu Ramalingam"
-        orcid: ""
-      - name: "Dott.ssa Franza Teresa"
-        orcid: ""
-  collaborations:
-    national:
-      - "ENEA"
-      - "Universita degli Studi di Padova, Dipartimento di Ingegneria Civile, Edile e Ambientale"
-      - "Universita degli Studi di Padova, Dipartimento Territorio e Sistemi Agro-Forestali"
-      - "IRPET"
-      - "RED Risk"
-      - "ISPRA"
-      - "ISAC CNR"
-      - "Politecnico di Milano"
-      - "Comune di Milano"
-      - "Universita degli Studi di Genova"
-      - "Sanpellegrino SpA, Stabilimento Levissima"
-    international:
-      - "LATMOS CNRS, Paris"
-      - "LISA CNRS, Creteil"
-      - "Biogeosciences, Universite Bourgogne Europe, Dijon"
-      - "Agence Francaise de Developpement, Paris"
-      - "Gallagher RE, London"
-  publications:
-    - name: "Marco Gaetani"
-      url: "https://research.iusspavia.it/cris/rp/rp04079"
-    - name: "Mario Martina"
-      url: "https://research.iusspavia.it/cris/rp/rp00379"
-    - name: "Alessandro Caiani"
-      url: "https://research.iusspavia.it/cris/rp/rp04047"
-    - name: "Alessio Ricci"
-      url: "https://research.iusspavia.it/cris/rp/rp03995"
-    - name: "Francesco Dottori"
-      url: "https://research.iusspavia.it/cris/rp/rp05377"
-    - name: "Giorgia Fosser"
-      url: "https://research.iusspavia.it/cris/rp/rp05272"
-
-contact:
-  email: "carisma@iusspavia.it"
-  secondary_email: "marco.gaetani@iusspavia.it"
-  phone: "Tel: +39 0382 375811"
-  fax: "Fax: +39 0382 375899"
-  address: |
-    IUSS Pavia
-    Palazzo del Broletto
-    Piazza della Vittoria 15
-    27100 Pavia, Italy
-  map_link: "https://www.bing.com/maps/search?FORM=HDRSC6&style=r&cp=45.191269~9.148983&lvl=18.5"
-
-# Social Links
-social:
-  # twitter: "https://twitter.com/labhandle"
-  github: "https://github.com/IUSSPavia-CARISMA"
-  # linkedin: "https://linkedin.com/company/lab"
-  # bluesky: "https://bsky.app/profile/lab.bsky.social"
-
-# Navigation
 navigation:
+  - title: "Home"
+    url: "/"
+  - title: "CV"
+    url: "/cv/"
   - title: "Research"
     url: "/research/"
-  - title: "People"
-    url: "/people/"
-  - title: "News"
+  - title: "Updates"
     url: "/news/"
-  - title: "Contact"
-    url: "/contact/"
 
-# Theme Colors (CSS custom properties will use these)
-colors:
-  primary: "#2563eb"      # Blue
-  secondary: "#059669"    # Green
-  accent: "#dc2626"       # Red
-  dark: "#1f2937"         # Dark gray
-  light: "#f9fafb"        # Light gray
-
-# Collections
 collections:
-  people:
-    output: true
-    permalink: /people/:name/
-  publications:
-    output: false
   research:
     output: true
     permalink: /research/:name/
@@ -163,7 +89,6 @@ collections:
     output: true
     permalink: /news/:title/
 
-# Build Settings
 markdown: kramdown
 highlighter: rouge
 plugins:
@@ -171,7 +96,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-# Defaults
 defaults:
   - scope:
       path: ""
@@ -180,20 +104,12 @@ defaults:
       layout: "post"
   - scope:
       path: ""
-      type: "people"
-    values:
-      layout: "person"
-  - scope:
-      path: ""
       type: "research"
     values:
       layout: "research"
 
-# Exclude from processing
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
   - vendor
-  - README.md
-  - LICENSE

@@ -1,15 +1,22 @@
 <header class="site-header">
   <div class="container header-container">
     <a href="{{ '/' | relative_url }}" class="site-logo">
-      <img class="logo-icon" src="{{ '/assets/img/ca.png' | relative_url }}" alt="Lab Logo">
-      <span class="logo-text">{{ site.lab.name }}</span>
+      <span class="logo-mark">VO</span>
+      <span class="logo-text">{{ site.profile.short_name }}</span>
     </a>
-    <nav class="site-nav">
-      <ul>
-        {% for item in site.navigation %}
+    <div class="header-actions">
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          {% for item in site.navigation %}
           <li><a href="{{ item.url | relative_url }}" class="{% if page.url == item.url %}active{% endif %}">{{ item.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
+          {% endfor %}
+        </ul>
+      </nav>
+      <div class="theme-switcher" aria-label="Theme switcher">
+        <button type="button" class="theme-chip is-active" data-theme-trigger data-theme="amber" aria-label="Use amber theme">Amber</button>
+        <button type="button" class="theme-chip" data-theme-trigger data-theme="forest" aria-label="Use forest theme">Forest</button>
+        <button type="button" class="theme-chip" data-theme-trigger data-theme="night" aria-label="Use night theme">Night</button>
+      </div>
+    </div>
   </div>
 </header>

@@ -1,9 +1,8 @@
 ---
-title: "AgroSystems Lab receives new USDA grant"
-date: 2024-03-15
-author: "Dr. Jane Smith"
+title: "First tutorial post"
+date: 2026-03-08
 ---
 
-We are thrilled to announce that the AgroSystems Lab has been awarded a $500,000 grant from the USDA to further our research on precision agriculture and sustainable farming practices.
+This is a sample update entry. Replace it with a tutorial, an announcement, or a short note about something you built or published.
 
-This funding will allow us to expand our team and purchase new drone equipment for field data collection.
+You can keep posts short. For this site, the point is not to run a full magazine. It is to create a lightweight stream of useful updates that supports your research and professional profile.

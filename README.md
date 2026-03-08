@@ -1,129 +1,72 @@
-# CARISMA Lab Website Template
+# Victor Ongera Personal Website
 
-> Open source website template for the **CARISMA Centre** — Climate Change Impact Studies for Risk Management — at [IUSS Pavia](https://www.iusspavia.it).
+Personal academic website for Victor Nyabuti Ong'era. The site is built with Jekyll and is designed to present:
 
----
+- an interactive CV
+- a research portfolio
+- links to public profiles such as GitHub and LinkedIn
+- short updates for tutorials, project notes, and announcements
 
-## 🌍 About
+## Stack
 
-This is a free, open source website template designed for research labs and academic centres. It was built for the CARISMA Centre at IUSS Pavia, which focuses on climate change, risk assessment, and sustainable development research — but anyone is welcome to use, adapt, and build on it.
+- Jekyll 4
+- Markdown collections for research and updates
+- Custom CSS and a small vanilla JavaScript theme switcher
 
----
+## Local development
 
-## Features
+Prerequisites:
 
-- Clean, modern design suited for academic and research contexts
-- Easy to customise for any lab or research group
-- Sections for team members, publications, projects, and news
-- Mobile-friendly and accessible
-- No proprietary dependencies — fully open source
+- Ruby
+- Bundler
 
----
-
-##  Getting Started
-
-### Prerequisites
-
-Make sure you have the following installed:
-
-- [Node.js](https://nodejs.org/) (v18 or higher recommended)
-- [Git](https://git-scm.com/)
-
-### Installation
+Install dependencies:
 
 ```bash
-# Clone the repository
-git clone https://github.com/IUSSPavia-CARISMA/lab-website.git
-
-# Navigate into the project
-cd lab-website
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm run dev
+bundle install
 ```
 
-Then open your browser at `http://localhost:3000`.
-
-### Build for Production
+Run the local server:
 
 ```bash
-npm run build
+bundle exec jekyll serve
 ```
 
----
+Build the site:
 
-## Project Structure
-
-```
-lab-website/
-├── public/          # Static assets (images, icons, fonts)
-├── src/
-│   ├── components/  # Reusable UI components
-│   ├── pages/       # Page templates
-│   └── styles/      # Global styles
-├── content/         # Editable content (team, publications, news)
-├── LICENSE
-├── SECURITY.md
-└── README.md
+```bash
+bundle exec jekyll build
 ```
 
----
+## Content structure
 
-## Customisation
+- `index.md`: homepage
+- `cv.md`: online CV
+- `research.md`: research landing page
+- `news.md`: updates landing page
+- `_research`: individual research entries
+- `_news`: tutorial and update posts
+- `_config.yml`: site profile, navigation, CV data, and links
 
-Most content can be edited without touching the code. Update the files in the `/content` directory to change:
+## Customizing the site
 
-- **Team members** — names, roles, photos, bios
-- **Publications** — titles, authors, links
-- **Projects** — descriptions, status, funding info
-- **News & events** — announcements and highlights
+Update personal/profile data in `_config.yml`:
 
-For deeper customisation (colours, layout, branding), edit the files in `/src/styles`.
+- name and title
+- GitHub and LinkedIn links
+- CV summary, experience, education, and skills
+- homepage intro text
 
----
+Add research items by creating Markdown files in `_research`.
 
-##  Contributing
+Add tutorials or news updates by creating Markdown files in `_news`.
 
-Contributions are welcome! If you find a bug, have a feature request, or want to improve the template:
+Adjust design and themes in:
 
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/your-feature`)
-3. Make your changes and commit (`git commit -m 'Add your feature'`)
-4. Push to your branch (`git push origin feature/your-feature`)
-5. Open a Pull Request
+- `assets/css/main.css`
+- `assets/js/site.js`
+- `_includes/navigation.html`
 
-Please be respectful and constructive in all interactions.
+## Privacy note
 
----
-
-## Security
-
-If you discover a security vulnerability, please follow our responsible disclosure process outlined in [SECURITY.md](./SECURITY.md). Do not open a public issue.
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** — see [LICENSE](./LICENSE) for details.
-
-You are free to use, modify, and distribute this template for any purpose, including commercially. We kindly ask that you credit CARISMA / IUSS Pavia in your project documentation or website footer if you use this template as a base — it's not required, but it's appreciated. 🙏
-
----
-
-##  About CARISMA
-
-The **CARISMA Centre** (Climate Change Impact Studies for Risk Management) at IUSS Pavia coordinates multidisciplinary research on climate change and sustainable development. Its core areas include:
-
-- Climate modelling and extreme event analysis
-- Environmental and human impact assessment
-- Risk management and policy
-- Sustainable development economics and law
-
-Learn more at [iusspavia.it](https://www.iusspavia.it/en/research/reasearch-centres/climate-change-impact-studies-risk-management-carisma).
-
----
-
-*Made with ❤️ at IUSS Pavia*
+The site is currently set up to avoid exposing unnecessary personal details. Public links and the hosted PDF CV are included, but phone number and direct email have been removed from the rendered site.
