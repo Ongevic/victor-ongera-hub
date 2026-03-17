@@ -560,6 +560,157 @@ code {
   background: #f1e7db;
 }
 
+.tool-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(300px, 0.92fr);
+  gap: 1.25rem;
+}
+
+.tool-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.tool-card::after {
+  content: "";
+  position: absolute;
+  inset: auto -4rem -4rem auto;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--panel-glow), transparent 70%);
+  pointer-events: none;
+}
+
+.tool-card-body {
+  padding: 1.5rem;
+}
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.tool-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.tool-field-full {
+  grid-column: 1 / -1;
+}
+
+.tool-label {
+  font-weight: 700;
+}
+
+.tool-help,
+.tool-status,
+.tool-note,
+.tool-meta {
+  color: var(--muted);
+}
+
+.tool-input,
+.tool-select,
+.tool-textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--surface) 88%, var(--surface-alt));
+  color: var(--ink);
+  font: inherit;
+}
+
+.tool-input:focus,
+.tool-select:focus,
+.tool-textarea:focus {
+  outline: 2px solid color-mix(in srgb, var(--accent) 32%, transparent);
+  border-color: color-mix(in srgb, var(--accent) 46%, var(--line));
+}
+
+.tool-textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.tool-divider {
+  grid-column: 1 / -1;
+  margin: 0.5rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.84rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent-dark);
+}
+
+.tool-actions,
+.tool-output-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.tool-output-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tool-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  background: var(--accent-soft);
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--line));
+  color: var(--accent-dark);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.tool-output {
+  min-height: 440px;
+  padding: 1.1rem;
+  border-radius: 22px;
+  background: #11161d;
+  color: #edf2f6;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  line-height: 1.55;
+}
+
+html[data-theme="night"] .tool-output {
+  background: #0b1016;
+}
+
+.tool-notes {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 1.2rem;
+}
+
+@media (max-width: 800px) {
+  .tool-shell,
+  .tool-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 800px) {
   .header-container,
   .hero-grid,
