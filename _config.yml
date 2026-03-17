@@ -76,6 +76,8 @@ navigation:
     url: "/"
   - title: "CV"
     url: "/cv/"
+  - title: "Sbatch"
+    url: "/sbatch/"
   - title: "Research"
     url: "/research/"
   - title: "Updates"
