@@ -1,16 +1,20 @@
 (function () {
   var root = document.documentElement;
   var storageKey = "victor-theme";
-  var triggers = Array.prototype.slice.call(document.querySelectorAll("[data-theme-trigger]"));
+  var allowedThemes = ["day", "rust", "night"];
+  var themeSelect = document.querySelector("[data-theme-select]");
   var revealTargets = Array.prototype.slice.call(
     document.querySelectorAll(".hero-copy, .hero-panel, .panel, .showcase-card, .card, .feature-card, .news-item, .timeline-item")
   );
 
   function setTheme(theme) {
+    if (allowedThemes.indexOf(theme) === -1) {
+      theme = "day";
+    }
     root.setAttribute("data-theme", theme);
-    triggers.forEach(function (button) {
-      button.classList.toggle("is-active", button.getAttribute("data-theme") === theme);
-    });
+    if (themeSelect) {
+      themeSelect.value = theme;
+    }
     try {
       localStorage.setItem(storageKey, theme);
     } catch (error) {
@@ -25,13 +29,13 @@
     savedTheme = null;
   }
 
-  setTheme(savedTheme || root.getAttribute("data-theme") || "amber");
+  setTheme(savedTheme || root.getAttribute("data-theme") || "day");
 
-  triggers.forEach(function (button) {
-    button.addEventListener("click", function () {
-      setTheme(button.getAttribute("data-theme"));
+  if (themeSelect) {
+    themeSelect.addEventListener("change", function () {
+      setTheme(themeSelect.value);
     });
-  });
+  }
 
   if (!("IntersectionObserver" in window)) {
     return;

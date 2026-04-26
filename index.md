@@ -69,7 +69,7 @@ title: Home
     <article class="showcase-card">
       <p class="eyebrow">Themes</p>
       <h3>Switch mood instantly</h3>
-      <p>Use the theme chips in the header to move between amber, forest, and night.</p>
+      <p>Use the compact selector in the header to move between day, rust, and night.</p>
     </article>
     <article class="showcase-card">
       <p class="eyebrow">Portfolio</p>

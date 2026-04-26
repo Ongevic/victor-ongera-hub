@@ -13,9 +13,14 @@
         </ul>
       </nav>
       <div class="theme-switcher" aria-label="Theme switcher">
-        <button type="button" class="theme-chip is-active" data-theme-trigger data-theme="amber" aria-label="Use amber theme">Amber</button>
-        <button type="button" class="theme-chip" data-theme-trigger data-theme="forest" aria-label="Use forest theme">Forest</button>
-        <button type="button" class="theme-chip" data-theme-trigger data-theme="night" aria-label="Use night theme">Night</button>
+        <label class="theme-select-wrap">
+          <span class="theme-select-label">Theme</span>
+          <select class="theme-select" data-theme-select aria-label="Choose theme">
+            <option value="day">Day</option>
+            <option value="rust">Rust</option>
+            <option value="night">Night</option>
+          </select>
+        </label>
       </div>
     </div>
   </div>
